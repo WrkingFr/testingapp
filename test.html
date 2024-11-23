@@ -11,7 +11,8 @@
     <script>
         function startGame() {
             var packageName = "com.portalteam.enderparadise";
-            window.location.href = "intent://" + packageName + "#Intent;scheme=package;end";
+            var intentUri = "intent://" + packageName + "#Intent;scheme=android-app;package=" + packageName + ";end";
+            window.open(intentUri, "_blank");
         }
     </script>
 </body>
