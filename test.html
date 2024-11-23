@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Game</title>
+</head>
+<body>
+    <button onclick="startGame()">Start Game</button>
+
+    <script>
+        function startGame() {
+            var packageName = "com.portalteam.enderparadise";
+            var intentUri = "intent://" + packageName + "#Intent;scheme=android-app;package=" + packageName + ";end";
+            window.location.href = intentUri;
+        }
+    </script>
+</body>
+</html>
